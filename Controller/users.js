@@ -99,7 +99,8 @@ const signup = async (req, res) => {
                                 from: process.env.user,
                                 to: email,
                                 subject: "Dear user you have successfully signed up.",
-                                html: "<h1>Habibi Habibi come to me. <br> You successfully signed up.</h1>"
+                                html: "<h1> Welocome.</h1>"
+                                // html: "<h1> Welocome.</h1>"
                             }
                             await transport.sendMail(textmail)
                             res.json({ mesage: 'Sent email.'})
@@ -164,3 +165,13 @@ const deleteuser = async (req, res) => {
 }
 
 module.exports = { allusers, userbyid, login, signup, updateuser, deleteuser }
+
+
+
+
+// const signup = async (req,res)=>{
+
+//     const {username, email, password} = req.body
+//     const matching = await usersSchema.findOne({username,email})
+//     if()
+// } 

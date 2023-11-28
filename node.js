@@ -24,7 +24,7 @@ const usersRoute = require('./Router/users')
 
 //API or paths
 
-app.use('/productapi', productsRoute)
-app.use('/userapi', usersRoute)
+app.use('/api', productsRoute)
+app.use('/api', usersRoute)
 
 app.listen(port, console.log("Server is created at port 4000")) 
